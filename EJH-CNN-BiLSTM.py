@@ -8,7 +8,6 @@ from keras_vggface.vggface import VGGFace
 from keras_vggface import utils
 import urllib.request
 import urllib
-
 from keras.optimizers import SGD
 from keras_vggface.models import RESNET50, VGG16, SENET50
 from keras.callbacks import ModelCheckpoint
@@ -103,13 +102,13 @@ x0=0
 x1=0
 x2=0
 x3=0
-P_folder='D:/MyPhD/balancedata/PSPI/'
-i_folder='D:/MyPhD/balancedata/Images/'
+P_folder='D:/balancedata/PSPI/'
+i_folder='D:/balancedata/Images/'
 p_paitients=os.listdir(P_folder)
 
 for k in range(len(p_paitients)):
-    PSPI_folder='D:/MyPhD/balancedata/PSPI' + '/' + p_paitients[k]
-    img_folder='D:/MyPhD/balancedata/Images' + '/' + p_paitients[k]
+    PSPI_folder='D:/balancedata/PSPI' + '/' + p_paitients[k]
+    img_folder='D:/balancedata/Images' + '/' + p_paitients[k]
     folders=os.listdir(PSPI_folder)
        
     for i in range(len(folders)):
